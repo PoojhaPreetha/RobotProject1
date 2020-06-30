@@ -21,26 +21,29 @@ MySecondTest
     
 MyThirdTest
     Log    Hello Poojha...  
-# FirstSeleniumTest
-    # Open Browser    https://google.com    chrome
-    # Set Browser Implicit Wait    5
-    # Input Text      name=q                Automation Step by Step
-    # Press Keys    name=q    ENTER
-    # # Click Button    name=btnK   
-    # Sleep    2    
-    # Close Browser
-    # Log    Test Completed    
     
-# SampleLoginTest
-    # [Documentation]    This is a Sample login test   
-    # Open Browser    ${url}    chrome
-    # Set Browser Implicit Wait    5
-    # Loginkeyword
-    # Click Element    id=welcome    
-    # Click Element    link=Logout 
-    # Close Browser 
-    # Log    Test Completed    
-    # Log    This test was completed by %{username} on %{os}    
+MyFourthTest
+    Log    Hello Preetha...  
+FirstSeleniumTest
+    Open Browser    https://google.com    chrome
+    Set Browser Implicit Wait    5
+    Input Text      name=q                Automation Step by Step
+    Press Keys    name=q    ENTER
+    # Click Button    name=btnK   
+    Sleep    2    
+    Close Browser
+    Log    Test Completed    
+    
+SampleLoginTest
+    [Documentation]    This is a Sample login test   
+    Open Browser    ${url}    chrome
+    Set Browser Implicit Wait    5
+    Loginkeyword
+    Click Element    id=welcome    
+    Click Element    link=Logout 
+    Close Browser 
+    Log    Test Completed    
+    Log    This test was completed by %{username} on %{os}    
     
 *** Variables ***
 ${url}    https://opensource-demo.orangehrmlive.com/
